@@ -1,0 +1,322 @@
+@CHARSET "UTF-8";
+
+*{
+	margin:0;
+	padding:0;
+}
+html{
+	width:100%;
+}
+
+/* header */
+
+.header{
+	width:100%;
+	height:20%;
+	
+}
+
+.header-title{
+	overflow:hidden;
+}
+
+/* header - logo */
+
+.logo{
+	margin:30px 30px;
+	float:left;
+}
+
+.logoImg{
+}
+
+/* header - search */
+
+.search{
+	margin:2.8% 18%;
+	float:left;
+	background-color:#f2f2f2;
+	border-radius:15px;
+	width:500px;
+	height:50px;
+}
+
+.search>form{
+	width:100%;
+	height:100%;
+	margin:0 3px;
+	display:flex;
+}
+
+.search_bar{
+	width:400px;
+	height:30px;
+	margin-top:8px;
+	margin-left:20px;
+	border:none;
+	background-color: #f2f2f2;
+}
+
+.search_bar:FOCUS{
+	outline:none;
+}
+
+.searchImg{
+	border:none;
+	margin-left:40px;
+	outline:none;
+	background:none;
+}
+.searchImg:HOVER{
+	cursor:pointer;
+	
+}
+.searchImg>img{
+	width:30px;
+	height:30px;
+}
+
+/* header - top menu */
+
+.top-menu{
+	margin:3.5% 1.5%;
+	/* margin-top:41px;
+	margin-right:50px; */
+	float:right;
+	height:100%;
+}
+.top-menu ul{
+	display:flex;
+	list-style: none;
+}
+.top-menu li{
+	margin-left:2px;
+	margin-right:1em;
+}
+.top-menu a{
+	text-decoration: none;
+	display:flex;
+	color:black;
+	font-size: smaller;
+}
+.top-menu a>img{
+	margin-right:2px;
+}
+
+/* header - main menu */
+.header-menu{
+	padding:10px 100px;
+	background-color: #ffcc33;
+}
+
+.header-menu-ul{
+	overflow:hidden;
+}
+
+.header-menu-ul>li{
+	list-style: none;
+	float:left;
+	margin:0 100px;
+}
+
+.header-menu-ul a{
+	text-decoration: none;
+}
+
+.header-menu-ul span:hover{
+	color:black;
+	font-size: larger;
+}
+
+.header-menu-ul span{
+	color:white;
+	font-size: larger;
+}
+
+.free-delivery{
+	text-align: center;
+}
+
+/* footer */
+.footer{
+	padding:2% 0;
+	border: 1px solid red;
+	color:white;
+	background-color: #ffcc33;
+	position: relative;
+	width:100%;
+}
+.content{
+	margin:0 20%;
+}
+
+/* Main - join 회원가입 페이지*/
+.join{
+	margin:2% 15%;
+}
+.join_form{
+	margin:3% 10%;
+}
+.join_form>form{
+	width:60%;
+	margin:0 auto;
+}
+.input_sec{
+	margin:5px auto;
+}
+.input_sec span{
+	font-size: smaller;
+}
+.join_input{
+	width:100%;
+	height:30px;
+	margin:4px 0;
+}
+.addr_area{
+	display:flex;
+}
+#postcode{
+	width:70%;
+	margin-right:4%;
+}
+.addr_search{
+	width:25%;
+	margin:4px auto;
+	cursor:pointer;
+}
+.btn_sec>input{
+	width:100%;
+	height:30px;
+	margin:4px 0;
+	cursor:pointer;
+}
+.err_div{
+	font-size:smaller;
+	color:red;
+}
+
+/* Main - MyPage 마이페이지*/
+.mypage{
+	margin:2% 15%;
+}
+
+.mypage_menu_container{/* 메뉴 컨테이너 */
+	display: flex;
+	margin:3% 0;
+}
+
+.mypage_menu_container button{/* 버튼 기본 설정 */
+	background: none;
+	border:0;
+	outline:0;
+	cursor: pointer;
+	margin:0 5%;
+}
+
+.mypage_menu_btn{/* 버튼 */
+	width:200px;
+	height:80px;
+	font-weight: 500;
+}
+
+.mypage_menu_btn.on{/* 버튼 클릭 됬을 때 */
+	border-bottom: 2px solid red;
+	font-weight: 700;
+	color:red;
+}
+
+.mypage_menu_btn :HOVER{
+	color:red;
+}
+
+.mypage_menu_btn span{
+	display: block;
+	margin-top: 10px;
+	font-size: larger;
+}
+
+.mypage_box{/* 박스 컨테이너 */
+	display:none;
+	padding:10px;
+	border:1px solid orange;
+}
+
+.mypage_box.on{/* 박스 on */
+	display: block;
+}
+
+/* goods_main */
+.goods_list{
+	margin:0 15%;
+}
+
+/* goods_detail */
+.detail_info{
+	margin: 2% 18%;
+	border: 1px solid black;
+	padding:3% 2%;
+}
+#sec1{
+	float: left;
+	width:550px;
+	height:300px;
+	margin-bottom: 1%;
+}
+
+.detail_picture{
+	border:1px solid red;
+	margin-right:15px;
+}
+
+.detail_basicInfo{
+	border:1px solid blue;
+	margin-left:15px;
+}
+
+.detail_btn{
+	border:1px solid orange;
+}
+
+.detail_content{
+	clear:both;
+	border:1px solid green;
+}
+
+.tab_menu_container{
+	display:flex;
+}
+
+.tab_menu_container button{
+	background: none;
+	border:0;
+	outline:0;
+	cursor:pointer;
+	margin:0 20px;
+}
+
+.tab_menu_btn{
+	width:35%;
+	height:80px;
+	font-size: 1.2em;
+}
+
+.tab_menu_btn.on{
+	border-bottom: 2px solid red;
+	color:red;
+}
+
+.tab_menu_btn:HOVER {
+	color:red;
+}
+
+.tab_box{
+	display:none;
+}
+
+.tab_box.on{
+	display:block;
+}
+
+.td{
+	border:1px solid black;
+}
